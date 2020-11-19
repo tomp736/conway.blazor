@@ -1,0 +1,12 @@
+@import '';
+
+/* _content/Conway.Components/GameOfLife.razor.rz.scp.css */
+td.cell0[b-ejbjqkoot5]
+{
+    background-color: white;
+}
+
+td.cell1[b-ejbjqkoot5]
+{
+    background-color: black;
+}
