@@ -1,0 +1,36 @@
+﻿@* temparary, blazor will not be rendering dom *@
+<table>
+    @for (int i = 0; i < _gameOfLife.CurrentGeneration.GetLength(0); i++)
+    {   
+        <tr>     
+        @for (int j = 0; j < _gameOfLife.CurrentGeneration.GetLength(1); j++)
+        {    
+            <td class="cell@_gameOfLife.CurrentGeneration[ i , j ]"></td>
+        } 
+        </tr>
+    }
+</table>
+
+@code
+{
+    Conway.GameOfLife.GameOfLife _gameOfLife = new Conway.GameOfLife.GameOfLife(100,100);
+
+    public int delay = 1;
+
+    protected async override Task OnInitializedAsync()
+    {
+        timer = Timer();
+        await base.OnInitializedAsync();
+    }
+
+    private Task timer;
+    public async Task Timer()
+    {
+        while(true)
+        {
+            await Task.Delay(1);
+            _gameOfLife.SpawnNextGeneration();
+            StateHasChanged();
+        }
+    }
+}
