@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Conway.GameOfLife
 {
@@ -150,18 +151,17 @@ namespace Conway.GameOfLife
 
         private void DrawGeneration()
         {
-
-            string html = "";
+            StringBuilder htmlStringBuilder = new StringBuilder();
             for (int i = 0; i < CurrentGeneration.GetLength(0); i++)
             {
-                html += "<tr>";
+                htmlStringBuilder.Append("<tr>");
                 for (int j = 0; j < CurrentGeneration.GetLength(1); j++)
                 {
-                    html += "<td class=\"cell" + CurrentGeneration[i, j] + "\"></td>";
+                    htmlStringBuilder.Append("<td class=\"cell" + CurrentGeneration[i, j] + "\"></td>");
                 }
-                html += "</tr>";
+                htmlStringBuilder.Append("</tr>");
             }
-            _currentGenerationHtml = html;
+            _currentGenerationHtml = htmlStringBuilder.ToString();
         }
         #endregion
     }
