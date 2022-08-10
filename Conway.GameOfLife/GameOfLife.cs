@@ -149,9 +149,10 @@ namespace Conway.GameOfLife
             TransferNextGenerations();
         }
 
+        private StringBuilder htmlStringBuilder = new StringBuilder();
         private void DrawGeneration()
         {
-            StringBuilder htmlStringBuilder = new StringBuilder();
+            htmlStringBuilder.Clear();
             for (int i = 0; i < CurrentGeneration.GetLength(0); i++)
             {
                 htmlStringBuilder.Append("<tr>");
