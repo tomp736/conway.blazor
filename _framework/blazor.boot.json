@@ -7,10 +7,10 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "Conway.BlazorClient.dll": "sha256-w7EptXLYQ8YiDa8lRjKnw5LgCM4DQ8KzYw0REVxFpic=",
-      "Conway.Components.dll": "sha256-v\/sYj9Xm270+abFSBHH7oXEoA6K4+zZ5TU3UrGnXobk=",
-      "Conway.GameOfLife.dll": "sha256-IjHkv6ncFbin3RmCn78WlsrgPBCSYXccZMPQv7mWBD8=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-8dpFOJ+ErJwRKUlxA6Tl3DpZTjgKZ\/5a8Sz7LSni2l0=",
+      "Conway.BlazorClient.dll": "sha256-S1+D2hIegBam3gga1NNRbJexoBplOFFHsC1orJ6w2YA=",
+      "Conway.Components.dll": "sha256-g7YVY\/\/MTez3JXh7ykeBF3JMfrErzCVxUYh\/0ntaQbg=",
+      "Conway.GameOfLife.dll": "sha256-Ez0bsGAIa0b93jY7xTGuAURDLVmiaJF8qDsLgHlNNcY=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-dXcKKlS30HuRM9AZ+jN8n3gzgp5prmwjrql2jrR\/RwI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-MtAycw6E7J5AejM2LBXAf7BLuwsG\/2Cl7\/5G9LSM7g4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-hItIMIcIumfGi1q3IylwSEfpyLuK1QShnYCDeXYXF+M=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
