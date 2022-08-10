@@ -9,7 +9,7 @@
     "assembly": {
       "Conway.BlazorClient.dll": "sha256-vFkfZgCi0ZTUsZFzZ++XO62pNeY2XioYMjtctlnuNck=",
       "Conway.Components.dll": "sha256-pbERYxL+5+6tzCkBukubVTYv76b4L2HpQnH7vSlHtGc=",
-      "Conway.GameOfLife.dll": "sha256-pwq6BUK3QU6k2a77TNCjZ6zWOyEe3r\/UuyHOSzWSpfI=",
+      "Conway.GameOfLife.dll": "sha256-p9GSYShkKJ0Od8Y\/U+nu4VeXG2xilneOKKnhN1rs1Rw=",
       "Microsoft.AspNetCore.Components.dll": "sha256-dXcKKlS30HuRM9AZ+jN8n3gzgp5prmwjrql2jrR\/RwI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-MtAycw6E7J5AejM2LBXAf7BLuwsG\/2Cl7\/5G9LSM7g4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-hItIMIcIumfGi1q3IylwSEfpyLuK1QShnYCDeXYXF+M=",
