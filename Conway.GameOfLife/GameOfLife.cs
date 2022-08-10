@@ -79,14 +79,13 @@ namespace Conway.GameOfLife
         /// </summary>
         private void TransferNextGenerations()
         {
-            CurrentGeneration = nextGeneration;
-            // for (int i = 0; i < X; i++)
-            // {
-            //     for (int j = 0; j < Y; j++)
-            //     {
-            //         CurrentGeneration[i, j] = nextGeneration[i, j];
-            //     }
-            // }
+            for (int i = 0; i < X; i++)
+            {
+                for (int j = 0; j < Y; j++)
+                {
+                    CurrentGeneration[i, j] = nextGeneration[i, j];
+                }
+            }
         }
 
         /// <summary>
