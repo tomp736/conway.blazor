@@ -3,7 +3,7 @@
 namespace Conway.GameOfLife
 {
     // https://github.com/Kohana55/ConwaysGameOfLife
-   public class GameOfLife
+    public class GameOfLife
     {
         #region Properties & Fields
         public int X { get; }
@@ -11,6 +11,25 @@ namespace Conway.GameOfLife
         public int[,] CurrentGeneration { get; private set; }
 
         private int[,] nextGeneration;
+
+        public string CurrentGenerationHtml
+        {
+            get
+            {
+                string html = "";
+                for (int i = 0; i < CurrentGeneration.GetLength(0); i++)
+                {
+                    html += "<tr>";
+                    for (int j = 0; j < CurrentGeneration.GetLength(1); j++)
+                    {
+                        html += "<td class=\"cell" + CurrentGeneration[i, j] + "\"></td>";
+                    }
+                    html += "</tr>";
+                }
+                return html;
+            }
+        }
+
         #endregion
 
         #region Constructors
@@ -49,7 +68,7 @@ namespace Conway.GameOfLife
             nextGeneration = new int[X, Y];
 
             // Cycle cells using rng to set live/dead cells
-            var rng = new Random();           
+            var rng = new Random();
             for (int i = 0; i < X; i++)
             {
                 for (int j = 0; j < Y; j++)
