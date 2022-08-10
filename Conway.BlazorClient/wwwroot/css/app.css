@@ -28,3 +28,13 @@ table
         right: 0.75rem;
         top: 0.5rem;
     }
+
+td.cell0
+{
+    background-color: white;
+}
+
+td.cell1
+{
+    background-color: black;
+}
