@@ -8,8 +8,8 @@
   "resources": {
     "assembly": {
       "Conway.BlazorClient.dll": "sha256-uIXMp\/TaL1YqCp9MxMrfQGCQj6tjU5RGt3B6nojHe88=",
-      "Conway.Components.dll": "sha256-5T8f8w7SkoOgSNjJdW2JiX6okyyOghzTDc0SaMdKQmU=",
-      "Conway.GameOfLife.dll": "sha256-QZBo9Jdv4MYOD\/wENM+m06PA4qDPYvWDxRbMWCUqUS8=",
+      "Conway.Components.dll": "sha256-FjWPwf\/4oU0j+OmWPVh5rATqEkJ4fdjBn\/rSRtPalfU=",
+      "Conway.GameOfLife.dll": "sha256-efu\/k7OYTmFVzWDIPOdFw+wzV64Xmt7BOiSB2qJXPk8=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8dpFOJ+ErJwRKUlxA6Tl3DpZTjgKZ\/5a8Sz7LSni2l0=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-MtAycw6E7J5AejM2LBXAf7BLuwsG\/2Cl7\/5G9LSM7g4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-hItIMIcIumfGi1q3IylwSEfpyLuK1QShnYCDeXYXF+M=",
@@ -45,7 +45,7 @@
     "runtime": {
       "dotnet.6.0.8.nsw0ftlut9.js": "sha256-sWjGs8C2ebNOwCMNna0vnpY5s23iXLvug6JHIayd0dY=",
       "dotnet.timezones.blat": "sha256-2NJf++ql6UnbRRdYWEir6MxH58bYGWDEqofII\/z+Xmo=",
-      "dotnet.wasm": "sha256-dOHttlo3rBiLjAIm6ojmBsEby3qaV94fMGgik64Kb\/c=",
+      "dotnet.wasm": "sha256-fC95dCKX0CnaUkFHP6eaiks8SbMnXYUzqlMsHgvBeB4=",
       "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
       "icudt_EFIGS.dat": "sha256-4RwaPx87Z4dvn77ie\/ro3\/QzyS+\/gGmO3Y\/0CSAXw4k=",
       "icudt_no_CJK.dat": "sha256-OxylFgLJlFqixsj+nLxYVsv5iZLvfIKMpLf9hrWaChA=",
