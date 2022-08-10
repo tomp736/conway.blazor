@@ -12,21 +12,12 @@ namespace Conway.GameOfLife
 
         private int[,] nextGeneration;
 
+        private string _currentGenerationHtml;
         public string CurrentGenerationHtml
         {
             get
             {
-                string html = "";
-                for (int i = 0; i < CurrentGeneration.GetLength(0); i++)
-                {
-                    html += "<tr>";
-                    for (int j = 0; j < CurrentGeneration.GetLength(1); j++)
-                    {
-                        html += "<td class=\"cell" + CurrentGeneration[i, j] + "\"></td>";
-                    }
-                    html += "</tr>";
-                }
-                return html;
+                return _currentGenerationHtml;
             }
         }
 
@@ -153,7 +144,24 @@ namespace Conway.GameOfLife
                 }
             }
 
+            DrawGeneration();
             TransferNextGenerations();
+        }
+
+        private void DrawGeneration()
+        {
+
+            string html = "";
+            for (int i = 0; i < CurrentGeneration.GetLength(0); i++)
+            {
+                html += "<tr>";
+                for (int j = 0; j < CurrentGeneration.GetLength(1); j++)
+                {
+                    html += "<td class=\"cell" + CurrentGeneration[i, j] + "\"></td>";
+                }
+                html += "</tr>";
+            }
+            _currentGenerationHtml = html;
         }
         #endregion
     }
