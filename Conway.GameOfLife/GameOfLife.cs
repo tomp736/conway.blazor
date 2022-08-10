@@ -9,9 +9,9 @@ namespace Conway.GameOfLife
         #region Properties & Fields
         public int X { get; }
         public int Y { get; }
-        public int[,] CurrentGeneration { get; private set; }
+        public bool[,] CurrentGeneration { get; private set; }
 
-        private int[,] nextGeneration;
+        private bool[,] nextGeneration;
 
         // private string _currentGenerationHtml;
         // public string CurrentGenerationHtml
@@ -56,8 +56,8 @@ namespace Conway.GameOfLife
         private void SeedGame()
         {
             // Initiate the current and next generation boards
-            CurrentGeneration = new int[X, Y];
-            nextGeneration = new int[X, Y];
+            CurrentGeneration = new bool[X, Y];
+            nextGeneration = new bool[X, Y];
 
             // Cycle cells using rng to set live/dead cells
             var rng = new Random();
@@ -67,9 +67,9 @@ namespace Conway.GameOfLife
                 {
                     // Random Board
                     if (rng.Next(1, 101) < 70)
-                        CurrentGeneration[i, j] = 0;
+                        CurrentGeneration[i, j] = false;
                     else
-                        CurrentGeneration[i, j] = 1;
+                        CurrentGeneration[i, j] = true;
                 }
             }
         }
@@ -110,7 +110,7 @@ namespace Conway.GameOfLife
                         continue;
 
                     // Add cells value to current live neighbour count
-                    liveNeighbours += CurrentGeneration[x + i, y + j];
+                    liveNeighbours += CurrentGeneration[x + i, y + j] ? 1 : 0;
                 }
             }
 
@@ -130,14 +130,14 @@ namespace Conway.GameOfLife
                 {
                     int liveNeighbours = CalculateLiveNeighbours(x, y);
 
-                    if (CurrentGeneration[x, y] == 1 && liveNeighbours < 2)
-                        nextGeneration[x, y] = 0;
+                    if (CurrentGeneration[x, y] == true && liveNeighbours < 2)
+                        nextGeneration[x, y] = false;
 
-                    else if (CurrentGeneration[x, y] == 1 && liveNeighbours > 3)
-                        nextGeneration[x, y] = 0;
+                    else if (CurrentGeneration[x, y] == true && liveNeighbours > 3)
+                        nextGeneration[x, y] = false;
 
-                    else if (CurrentGeneration[x, y] == 0 && liveNeighbours == 3)
-                        nextGeneration[x, y] = 1;
+                    else if (CurrentGeneration[x, y] == false && liveNeighbours == 3)
+                        nextGeneration[x, y] = true;
 
                     else
                         nextGeneration[x, y] = CurrentGeneration[x, y];

@@ -5,7 +5,7 @@
         <tr>     
         @for (int j = 0; j < _gameOfLife.CurrentGeneration.GetLength(1); j++)
         {    
-            <td class="cell@_gameOfLife.CurrentGeneration[ i , j ]"></td>
+            <td class="cell@(_gameOfLife.CurrentGeneration[ i , j ] == true ? 1 : 0)"></td>
         } 
         </tr>
     }
